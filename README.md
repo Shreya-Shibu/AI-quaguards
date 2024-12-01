@@ -11,7 +11,7 @@ This project is an innovative approach to tackling beach pollution using advance
 - **Trash Detection and Classification**: Uses computer vision algorithms to detect and classify different types of trash (e.g., plastic, metal, organic).
 - **Solar-Powered**: Operates sustainably by harnessing solar energy, making it eco-friendly and cost-effective.
 - **Obstacle Avoidance**: Integrated with sensors (e.g., LiDAR, ultrasonic) to avoid obstacles and ensure smooth navigation.
-- **Real-Time Monitoring**: Connected to a dedicated website for live location tracking, dashcam video feed, and operational data monitoring.
+- **Real-Time Monitoring**: Dashcam video feed, live robot tracking, and operational data monitoring.
 
 ## **Tech Stack**
 - **Simulation**: Webots (Robot simulation software)
