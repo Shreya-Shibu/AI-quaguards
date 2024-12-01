@@ -5,7 +5,7 @@
 # **AI-Powered Solar-Powered Beach Cleaning Bot**
 
 ## **Problem Statement**:
-This project is an innovative approach to tackling beach pollution using advanced robotics, artificial intelligence, and sustainable energy. The AI-Powered Solar-Powered Beach Cleaning Bot is a simulated autonomous robot designed in **Webots** that performs efficient beach cleaning while minimizing environmental impact.
+This project is an innovative approach to tackling beach pollution using advanced robotics, artificial intelligence, and sustainable energy. The AI-Powered Solar-Powered Beach Cleaning Bot is a simulated autonomous robot designed in **Webots** that performs efficient beach cleaning while minimizing environmental impact. As existing cleaning bots are manually operated, we incorporated an autonomous cleaning bot.
 
 ## **Key Features**
 - **Autonomous Operation**: Equipped with AI, the bot can navigate the beach, avoid obstacles, and efficiently clean littered areas without human intervention.
