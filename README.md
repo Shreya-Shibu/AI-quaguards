@@ -8,7 +8,7 @@ This project is an innovative approach to tackling beach pollution using advance
 
 ## **Key Features**
 - **Autonomous Operation**: Equipped with AI, the bot can navigate the beach, avoid obstacles, and efficiently clean littered areas without human intervention.
-- **Trash Detection and Segregation**: Uses computer vision algorithms to detect, classify, and segregate different types of trash (e.g., plastic, metal, organic).
+- **Trash Detection and Classification**: Uses computer vision algorithms to detect and classify different types of trash (e.g., plastic, metal, organic).
 - **Solar-Powered**: Operates sustainably by harnessing solar energy, making it eco-friendly and cost-effective.
 - **Obstacle Avoidance**: Integrated with sensors (e.g., LiDAR, ultrasonic) to avoid obstacles and ensure smooth navigation.
 - **Real-Time Monitoring**: Connected to a dedicated website for live location tracking, dashcam video feed, and operational data monitoring.
