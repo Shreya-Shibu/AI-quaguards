@@ -9,7 +9,7 @@ result = client.run_workflow(
     workspace_name="trash-stetn",
     workflow_id="custom-workflow",
     images={
-        "image9": "YOUR_IMAGE.jpg",
+        "image9": "YIMG-20241201-WA0013.jpg",
         "image8": "YOUR_IMAGE.jpg",
         "image7": "YOUR_IMAGE.jpg",
         "image6": "YOUR_IMAGE.jpg",
