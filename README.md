@@ -1,5 +1,4 @@
 # AI-quaguards
-Here’s a professional and comprehensive description for your project to include in your GitHub repository's README file:
 
 ---
 
