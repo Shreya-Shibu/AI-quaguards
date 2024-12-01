@@ -1,0 +1,22 @@
+from inference_sdk import InferenceHTTPClient
+
+client = InferenceHTTPClient(
+    api_url="http://localhost:9001", # use local inference server
+    api_key="ZdSOHPBmp3LYLkfvfAVw"
+)
+
+result = client.run_workflow(
+    workspace_name="trash-stetn",
+    workflow_id="custom-workflow",
+    images={
+        "image9": "YOUR_IMAGE.jpg",
+        "image8": "YOUR_IMAGE.jpg",
+        "image7": "YOUR_IMAGE.jpg",
+        "image6": "YOUR_IMAGE.jpg",
+        "image4": "YOUR_IMAGE.jpg",
+        "image3": "YOUR_IMAGE.jpg",
+        "image2": "YOUR_IMAGE.jpg",
+        "image": "YOUR_IMAGE.jpg",
+        "image5": "YOUR_IMAGE.jpg"
+    }
+)
