@@ -1,0 +1,53 @@
+"""my_controller controller."""
+
+# Import the necessary classes from the controller module
+from controller import Robot
+
+# Define constants
+TIMESTEP = 32
+MAX_SPEED = 6.28
+
+# Define the function to run the robot
+def run_robot(robot):
+    # Get motor devices
+    left_motor = robot.getDevice("left wheel motor")
+    right_motor = robot.getDevice("right wheel motor")
+
+    # Set motors to velocity control mode
+    left_motor.setPosition(float("inf"))
+    right_motor.setPosition(float("inf"))
+
+    # Set initial motor velocities to zero
+    left_motor.setVelocity(0.0)
+    right_motor.setVelocity(0.0)
+
+    # Initialize proximity sensors
+    list_ps = []  # Correct variable name used
+    for ind in range(8):  # Assuming there are 8 proximity sensors (ps0 to ps7)
+        sensor_name = f"ps{ind}"  # Dynamically generate sensor names
+        sensor = robot.getDevice(sensor_name)
+        sensor.enable(TIMESTEP)
+        list_ps.append(sensor)  # Append to the list
+
+    # Main loop: perform simulation steps until Webots stops the controller
+    while robot.step(TIMESTEP) != -1:
+        # Default motor speeds
+        left_speed = MAX_SPEED
+        right_speed = MAX_SPEED
+
+        # Process sensor data
+        for ps in list_ps:
+            if ps.getValue() > 76:  # Adjust threshold based on sensor range
+                # Turn the robot if an obstacle is detected
+                left_speed = -MAX_SPEED
+                right_speed = MAX_SPEED
+                break  # Exit the loop after detecting an obstacle
+
+        # Set motor velocities
+        left_motor.setVelocity(left_speed)
+        right_motor.setVelocity(right_speed)
+
+# Main entry point
+if __name__ == "__main__":
+    my_robot = Robot()  # Create the robot instance
+    run_robot(my_robot)  # Run the robot
